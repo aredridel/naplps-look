@@ -61,7 +61,7 @@ a:focus {
     outline-offset: 1px;
 }
 
-svg:not([hidden]) {
+svg, img, object, picture, video {
     filter: url(pixelate.svg#pixelate);
 } 
 
