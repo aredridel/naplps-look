@@ -11,27 +11,59 @@
     box-sizing: border-box;
     margin: 1em;
     padding: 0;
-    background-color: #000044;
-    color: #dedddd;
+    background-color: var(--color-navy);
+    color: var(--color-white);
     filter: blur(1px);
     font-size: 24px;
     font-family: "Glass TTY VT320";
+
+    --color-yellow: #dddd00;
+    --color-navy: #000044;
+    --color-pink: #eebbbb;
+    --color-green: #bbeebb;
+    --color-blue: #bbbbee;
+    --color-white: #dedddd;
 }
 
 h1 {
     text-align: center;
     font-size: inherit;
-    outline: 2px solid #dddd00;
+    outline: 2px solid var(--color-yellow);
     outline-offset: 1px;
 }
 
 a {
     color: inherit;
-    outline: 2px solid #dddd00;
+    outline: 2px solid var(--color-yellow);
     outline-offset: 1px;
 }
 
+em {
+    font-style: normal;
+    color: var(--color-pink);
+}
+
+strong {
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-green);
+}
+
+i {
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-blue);
+}
+
 a:focus {
-    outline: 2px dashed #dddd00;
+    outline: 2px dashed var(--color-yellow);
     outline-offset: 1px;
+}
+
+svg:not([hidden]) {
+    filter: url(#pixelate);
+} 
+
+svg * {
+    stroke-width: 2.5;
 }
