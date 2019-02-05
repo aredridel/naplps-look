@@ -68,6 +68,7 @@ a:focus {
 
 svg, img, object, picture, video {
     filter: url(pixelate.svg#pixelate);
+    width: 100%;
 } 
 
 svg * {
