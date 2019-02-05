@@ -38,9 +38,18 @@ h2 {
     font-size: inherit;
 }
 
-a {
+a, button {
     color: inherit;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
     outline: 2px solid var(--color-yellow);
+    outline-offset: 1px;
+}
+
+a:focus, button:focus {
+    outline: 2px dashed var(--color-yellow);
     outline-offset: 1px;
 }
 
@@ -74,3 +83,22 @@ svg, img, object, picture, video, iframe {
 svg * {
     stroke-width: 2.5;
 }
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--color-yellow);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--color-yellow);
+}
+input:focus, textarea:focus {
+    font-family: inherit;
+    font-size: inherit;
+    border-bottom: 2px dashed var(--color-yellow);
+}
+
+textarea  {
+    vertical-align: top; 
+}
+
