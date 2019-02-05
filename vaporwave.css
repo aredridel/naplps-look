@@ -61,7 +61,7 @@ a:focus {
 }
 
 svg:not([hidden]) {
-    filter: url(#pixelate);
+    filter: url(pixelate.svg#pixelate);
 } 
 
 svg * {
