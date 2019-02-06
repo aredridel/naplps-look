@@ -26,7 +26,15 @@
     --color-white: #dedddd;
 }
 
-h1 {
+head {
+    display: contents;
+}
+
+title {
+    display: block;
+}
+
+title, h1 {
     text-align: center;
     font-size: inherit;
     outline: 2px solid var(--color-yellow);
