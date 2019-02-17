@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='vaporwave.css'>
+    <title>1987</title>
+
+    <style>
+      .toggle { display: none }
+      .toggle+.aside+.bside {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .toggle+.aside {
+        opacity: 1;
+        visibility: visible;
+      }
+      .toggle:checked+.aside+.bside {
+        opacity: 1;
+        visibility: visible;
+      }
+      .toggle:checked+.aside {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .cell {
+        position: relative;
+        height: 200px;
+      }
+      .cell > .aside, .cell > .bside {
+        position: absolute;
+        top: 0;
+        transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form action="#">
+
+      <div class="cell">
+        <input type="radio" class="toggle" name="selection" id="b">
+        <label class="aside" for="b">Click me</label>
+        <div class="bside">Information goes here</div>
+      </div>
+
+      <div class="cell">
+        <input type="radio" class="toggle" name="selection" id="a">
+        <label class="aside" for="a">Click me</label>
+        <div class="bside">More information goes here</div>
+      </div>
+
+    </form>
+
+  </body>
+</html>
